@@ -1,5 +1,5 @@
-import { Aside } from './components/Aside';
-import './globals.css'
+import { Aside } from "./components/Aside";
+import "./globals.css";
 
 export const metadata = {
   title: "Code Connect",
@@ -10,10 +10,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body>
-        <Aside />
-        {children}
+        <div className="app-container">
+          <Aside />
+          {children}
+        </div>
         aas
-        </body>
+      </body>
     </html>
   );
 }
