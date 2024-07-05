@@ -1,12 +1,15 @@
 import { CardPost } from "@/components/CardPost";
+import logger from "@/logger";
 
 async function getAllPosts() {
   const response = await fetch("http://localhost:3042/posts")
 
   if(!response) {
-    console.log("Ops, alguma coisa aconteceu!")
+    logger.error('Ops, alguma coisa aconteceu!')
+    return []
   }
 
+  logger.info("Posts obtidos com sucesso!")
   return response.json()
 }
 
@@ -15,7 +18,7 @@ export default async function Home() {
   
   return (
     <main>
-      {posts.map(post =>  <CardPost post={post}/>)}
+      {posts.map((post, idx) =>  <CardPost post={post} key={idx}/>)}
      
     </main>
   );
