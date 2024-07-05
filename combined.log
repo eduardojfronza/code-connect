@@ -89,3 +89,7 @@
 {"level":"info","message":"Posts obtidos com sucesso!","service":"user-service"}
 {"level":"info","message":"Posts obtidos com sucesso!","service":"user-service"}
 {"level":"info","message":"Posts obtidos com sucesso!","service":"user-service"}
+{"level":"info","message":"Posts obtidos com sucesso!","service":"user-service"}
+{"error":{"clientVersion":"5.16.1","name":"PrismaClientValidationError"},"level":"error","message":"Falha ao obter posts","service":"user-service"}
+{"error":{"clientVersion":"5.16.1","name":"PrismaClientValidationError"},"level":"error","message":"Falha ao obter posts","service":"user-service"}
+{"error":{"clientVersion":"5.16.1","name":"PrismaClientValidationError"},"level":"error","message":"Falha ao obter posts","service":"user-service"}
