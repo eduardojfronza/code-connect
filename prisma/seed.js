@@ -140,13 +140,14 @@ async function main() {
     },
   ];
 
-  posts.forEach(async (post) => {
+  await Promise.all(posts.map(async (post) => {
     await prisma.post.upsert({
       where: { slug: post.slug },
       update: {},
       create: post,
     });
-  });
+  }));
+
 
   console.log("Seed Ok");
 }
