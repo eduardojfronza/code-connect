@@ -42,9 +42,12 @@
 
 .footer {
     padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .link {
-    text-decoration: none;
     cursor: pointer;
+    color: #BFFFC3;
 }
