@@ -42,12 +42,20 @@
 
 .footer {
     padding: 16px;
+    
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
+.footer p {
+    margin: 0;
+    color: #8888;
+    font-size: 15px;
+    text-align: center;
+}
+
 .link {
+    margin-top: 20px;
     cursor: pointer;
     color: #BFFFC3;
 }
