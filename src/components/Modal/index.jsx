@@ -1,7 +1,7 @@
 "use client";
 
-import styles from './modal.module.css'
-import {forwardRef, useRef, useImperativeHandle } from "react";
+import styles from "./modal.module.css";
+import { forwardRef, useRef, useImperativeHandle } from "react";
 
 export const Modal = forwardRef(({ children }, ref) => {
   const dialogRef = useRef(null);
