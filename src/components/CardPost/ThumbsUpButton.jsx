@@ -1,6 +1,6 @@
 "use client";
 
-import { IconButton } from "../IconButton";
+import { IconButton } from "../Button/IconButton";
 import { ThumbsUp } from "../Icons/ThumbsUp";
 import { useFormStatus } from "react-dom";
 import { Spinner } from "../Spinner";
